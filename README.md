@@ -1,0 +1,33 @@
+# price-per-use
+
+Cost per use math for durable goods. Give a thing's price, how often you
+actually use it per year, and how long it lasts; the tool returns the real
+per-use cost (upkeep included), the annual cost of owning it, and how long
+until buying beats renting it per use.
+
+One Rust crate, library plus CLI, standard library only.
+
+The comparison most people miss: a $120 thing used 24 times a year for five
+years costs $1.00 per use, which beats almost any rental. The same thing
+used twice a year costs $12 per use, which beats almost nothing. The sticker
+price answers the wrong question.
+
+## Usage
+
+    price-per-use PRICE USES_PER_YEAR YEARS [UPKEEP_PER_YEAR RENT_PER_USE]
+
+Example:
+
+    price-per-use 120 24 5 10 8
+    cost per use (with upkeep): $1.42
+    annual cost of ownership:   $34.00
+    renting at $8.00/use breaks even at 0.6 years
+
+## Library
+
+```rust
+let cpu = price_per_use::cost_per_use_with_upkeep(120.0, 24.0, 5.0, 10.0);
+assert!((cpu - 1.4166666666666667).abs() < 1e-9);
+```
+
+More tool math like this at [Poket Dev](https://poketdev.com).

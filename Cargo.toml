@@ -1,0 +1,16 @@
+[package]
+name = "price-per-use"
+version = "0.1.0"
+edition = "2021"
+description = "Cost per use math for durable goods: price, uses per year, years of service, and the rent-or-sub comparison."
+license = "MIT"
+homepage = "https://durablepicks.com"
+repository = "https://github.com/scrapertweeter3-prog/price-per-use"
+
+[lib]
+name = "price_per_use"
+path = "src/lib.rs"
+
+[[bin]]
+name = "price-per-use"
+path = "src/main.rs"

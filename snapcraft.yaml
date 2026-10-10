@@ -1,0 +1,21 @@
+name: price-per-use
+base: core22
+version: "0.1.0"
+summary: "Cost per use math for durable goods, rent comparison built in"
+description: |
+  Cost per use math for durable goods: price, uses per year, years of
+  service, upkeep, and the rent-or-subscribe break-even. Built by Poket Dev.
+  Home page: https://durablepicks.com
+license: MIT
+
+grade: stable
+confinement: strict
+
+apps:
+  price-per-use:
+    command: bin/price-per-use
+
+parts:
+  price-per-use:
+    plugin: rust
+    source: .
