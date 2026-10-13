@@ -1,0 +1,6 @@
+site_name: price-per-use
+site_description: Cost-per-use and rent-vs-buy break-even math for durable goods, upkeep included.
+repo_url: https://github.com/scrapertweeter3-prog/price-per-use
+repo_name: scrapertweeter3-prog/price-per-use
+nav:
+  - Home: index.md
