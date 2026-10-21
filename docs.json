@@ -1,0 +1,16 @@
+{
+  "$schema": "https://docs.page/schema.json",
+  "name": "price-per-use",
+  "description": "Cost per use math for durable goods",
+  "sidebar": [
+    {
+      "group": "Guide",
+      "pages": [
+        {
+          "title": "Overview",
+          "href": "/"
+        }
+      ]
+    }
+  ]
+}
